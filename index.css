@@ -16,6 +16,14 @@
     margin-right: 3vw;
 }
 
+
+
+.none
+{
+    list-style: none;
+}
+
+
 .next-style
 {
     font-size: 2vw;
@@ -36,3 +44,31 @@ html
     font-family: Arial;
 }
 
+.center
+{
+    text-align: center;
+}
+
+.margin
+{
+    margin: 1vw 1vw;
+}
+
+
+
+.table
+{
+    font-size: 1.9vw;
+    margin: 3vw 3vw;
+}
+
+.pion
+{
+    display: block;
+    text-align: center;
+}
+
+#intel
+{
+    color: red;
+}

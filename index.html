@@ -23,9 +23,16 @@
                         <li>F - Brak Z integrowanej grafiki, Wymagana<br/>oddzielna karta graficzna</li>
                         <li>G - Zintegrowana karta graficzna</li>
                         <li>H - Zintegrowana karta graficzna o wysokiej jakości</li>
+                        <li>HK - Zintegrowana karta graficzna (oblokowany mnożnik)</li>
+                        <li>HQ - Zintegrowana karta graficzna, wyposażona w 4 rdzenie o wysokiej wydajności</li>
                         <li>K - Odblokowany mnożnik</li>
+                        <li>M - Procesory mobilne</li>
+                        <li>Q - Wielowątkowość/Wielordzeniowość</li>
                         <li>S - Niski pobór mocy</li>
                         <li>T - Bardzo niski pobór mocy</li>
+                        <li>U - Ultra niski pobór mocy (procesory do laptopów)</li>
+                        <li>XM - najniższa wydajność</li>
+                        <li>Y - bardzo niski pobór mocy (mniejsze od U)</li>
                     </ul>
                 </div>
             </section>
@@ -33,11 +40,12 @@
                 <h2 style="font-size: 5vw; display: flex; justify-content: center;">Dla procesora AMD</h2>
                 <div class="title">
                     <ul class="list-style">
-                        <li>X - podwyższone taktowanie</li>
-                        <li>U - procesory mobilne, przeznaczone dla laptopów</li>
+                        <li>X - Podwyższone taktowanie</li>
+                        <li>U - Procesory mobilne, przeznaczone dla laptopów</li>
+                        <li>G - Zintegrowana karta graficzna</li>
                         <li>PRO - Modele profeslonalne</li>
-                        <li>GE - energooszczędne procesory z zintegrowaną grafiką.</li>
-                        <li>AF Tanie odpowiedniki starszych serii</li>
+                        <li>GE - Energooszczędne procesory z zintegrowaną grafiką.</li>
+                        <li>AF - Tanie odpowiedniki starszych serii</li>
                     </ul>
                 </div>
             </section>
@@ -448,6 +456,287 @@
                         <p></p>
                         <li><b>Sporządzenie kosztorysu naprawy.</b></li>
                     </ol>
+                </div>
+            </section>
+            <section>
+                <div class="title">
+                    <h2 class="heading">Rodzaje macierzy</h2>
+                </div>
+                <div class="title">
+                    <ul class="list-style none">
+                        <li>Macierze RAID (ang. Redundant Array of Independent Disks) to technologie łączące wiele dysków twardych w jedną logiczną jednostkę w celu zwiększenia wydajności, pojemności lub bezpieczeństwa danych. Istnieje wiele poziomów RAID – każdy z nich oferuje różne kompromisy między wydajnością, niezawodnością i kosztami.</li>
+                        <p></p>
+                        <li>
+                            RAID 0 – Striping (paskowanie)
+                            <ul class="next-style">
+                                <p></p>
+                                <li>Opis: Dane są dzielone na bloki i zapisywane naprzemiennie na wielu dyskach.</li>
+                                <p></p>
+                                <li>Zalety: Bardzo wysoka wydajność (odczyt i zapis).</li>
+                                <p></p>
+                                <li>Wady: Brak redundancji – awaria jednego dysku = utrata wszystkich danych.</li>
+                                <p></p>
+                                <li>Minimalna liczba dysków: 2</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p></p>
+                            RAID 1 - Mirroring (lustrzane odbicie)
+                            <ul class="next-style">
+                                <p></p>
+                                <li>Opis: Dane są kopiowane identycznie na dwa (lub więcej) dyski.</li>
+                                <p></p>
+                                <li>Zalety: Wysoka odporność na awarie – dane są zdublowane.</li>
+                                <p></p>
+                                <li>Wady: Kosztowny – pojemność użytkowa to tylko połowa całkowitej.</li>
+                                <p></p>
+                                <li>Minimalna liczba dysków: 2</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p></p>
+                            RAID 5 – Striping z rozproszoną parzystością
+                            <ul class="next-style">
+                                <p></p>
+                                <li>Opis: Dane i informacje parzystości (potrzebne do odzyskiwania danych) są</li>
+                                <p></p>
+                                <li>Zalety: Dobry balans między wydajnością a bezpieczeństwem.</li>
+                                <p></p>
+                                <li>Wady: Utrata jednego dysku nie powoduje utraty danych, ale odbudowa macierzy jest czasochłonna.</li>
+                                <p></p>
+                                <li>Minimalna liczba dysków: 3</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p></p>
+                            RAID 6 – Striping z podwójną parzystością
+                            <ul class="next-style">
+                                <p></p>
+                                <li>Opis: Jak RAID 5, ale przechowuje dwie informacje parzystości, co pozwala przetrwać awarię dwóch dysków.</li>
+                                <p></p>
+                                <li>Zalety: Większe bezpieczeństwo niż RAID 5.</li>
+                                <p></p>
+                                <li>Wady: Niższa wydajność zapisu, większe koszty (więcej miejsca na parzystość).</li>
+                                <p></p>
+                                <li>Minimalna liczba dysków: 4</li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <p></p>
+                            RAID 10 (1+0) – Striping + Mirroring
+                            <ul class="next-style">
+                                <p></p>
+                                <li>Opis: Połączenie RAID 1 i RAID 0 – dane są paskowane między lustrzanymi parami dysków.</li>
+                                <p></p>
+                                <li>Zalety: Wysoka wydajność i dobra odporność na awarie.</li>
+                                <p></p>
+                                <li>Wady: Wysokie koszty – połowa pojemności jest dostępna.</li>
+                                <p></p>
+                                <li>Minimalna liczba dysków: 4</li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="title">
+                    <h2 class="heading">Tabela porównawcza</h2>
+                </div>
+                <div class="title">
+                    <table class="table" border="5">
+                        <tr>
+                            <th>Poziom</th>
+                            <th>Redundancja</th>
+                            <th>Wydajność</th>
+                            <th>Strata danych przy awarii 1 dysku</th>
+                            <th>Wydajność zapisu</th>
+                            <th>Pojemność użyteczna</th>
+                        </tr>
+                        <tr class="center">
+                            <td>RAID 0</td>
+                            <td>❌</td>
+                            <td>🔼🔼</td>
+                            <td>✅ (utrata danych)</td>
+                            <td>🔼🔼</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr class="center">
+                            <td>RAID 1</td>
+                            <td>✅</td>
+                            <td>🔼</td>
+                            <td>❌</td>
+                            <td>🔼</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr class="center">
+                            <td>RAID 5</td>
+                            <td>✅</td>
+                            <td>🔼</td>
+                            <td>❌</td>
+                            <td>🔽</td>
+                            <td>(N−1)/N</td>
+                        </tr>
+                        <tr class="center">
+                            <td>RAID 6</td>
+                            <td>✅✅</td>
+                            <td>🔼</td>
+                            <td>❌</td>
+                            <td>🔽🔽</td>
+                            <td>(N−2)/N</td>
+                        </tr>
+                        <tr class="center">
+                            <td>RAID 10</td>
+                            <td>✅</td>
+                            <td>🔼🔼</td>
+                            <td>❌</td>
+                            <td>🔼🔼</td>
+                            <td>50%</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="title">
+                    <h2 class="heading">Rodzaje kopii danych</h2>
+                </div>
+                <div class="title">
+                    <ul class="list-style none">
+                        <li>
+                            Pełna kopia zapasowa (Full Backup)
+                            <p></p>
+                            <ul class="next-style">
+                                <p></p>
+                                <li>Opis: Tworzona jest kompletna kopia wszystkich wybranych danych.</li>
+                                <p></p>
+                                <li>Zalety:<br/> Najszybsze przywracanie danych <br/> Prosta w zarządzniu</li>
+                                <p></p>
+                                <li>Wady: <br/> Wymaga najwięcej miejsca <br/>Tworzenie kopii trwa najdłużej.</li>
+                                <p></p>
+                                <li>Przykład użycia: cotygodniowy pełny backup + codzienne przyrostowe.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p></p>
+                            Przyrostowa kopia zapasowa (Incremental Backup)
+                            <p></p>
+                            <ul class="next-style">
+                                <p></p>
+                                <li>Opis: Zawiera tylko dane zmienione od czasu ostatniego backupu (pełnego lub przyrostowego).</li>
+                                <p></p>
+                                <li>Zalety:<br/> Oszczędność miejsca i czasu tworzenia kopii.</li>
+                                <p></p>
+                                <li>Wady: <br/> Przywracanie jest wolniejsze – trzeba odtworzyć pełną kopię i wszystkie przyrostowe od tego momentu.</li>
+                                <p></p>
+                                <li>Przykład użycia: backup co godzinę w systemach produkcyjnych.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p></p>
+                            Różnicowa kopia zapasowa (Differential Backup)
+                            <p></p>
+                            <ul class="next-style">
+                                <p></p>
+                                <li>Opis: Zawiera wszystkie zmienione dane od ostatniego pełnego backupu.</li>
+                                <p></p>
+                                <li>Zalety:<br/> Szybsze przywracanie niż w przypadku przyrostowego.</li>
+                                <p></p>
+                                <li>Wady: <br/> Z każdą kolejną różnicową kopią zajmuje więcej miejsca i trwa dłużej.</li>
+                                <p></p>
+                                <li>Przykład użycia: pełna kopia w weekend + różnicowe codziennie.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <h2 class="heading">Tabela porównawcza</h2>
+                </div>
+                <div class="title">
+                    <table class="table" border="5">
+                        <tr class="center">
+                            <th>Rodzaj kopii</th>
+                            <th>Czas tworzenia</th>
+                            <th>Czas przywracania</th>
+                            <th>Miejsce na dysku</th>
+                            <th>Idealne dla</th>
+                        </tr>
+                        <tr class="center">
+                            <td>Pełna</td>
+                            <td>⏱️⏱️⏱️</td>
+                            <td>✅ Szybko</td>
+                            <td>💾💾💾</td>
+                            <td>Proste odzyskiwanie</td>
+                        </tr>
+                        <tr class="center">
+                            <td>Przyrostowa</td>
+                            <td>⏱️</td>
+                            <td>❌ Wolno</td>
+                            <td>💾</td>
+                            <td>Częste backupy</td>
+                        </tr>
+                    
+                        <tr class="center">
+                            <td>Różnicowa</td>
+                            <td>⏱️⏱️</td>
+                            <td>⚠️ Umiarkowanie</td>
+                            <td>💾💾</td>
+                            <td>Codzienna archiwizacja</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="pion">
+                    <h2 class="heading">Jak odczytać dane <br/>z procesora</h2>
+                </div>
+                <div class="pion">
+                    <h3 class="heading" id="intel">Intel Core i5-12400F</h3>
+                </div>
+                <div class="pion">
+                    <ul class="list-style none">
+                        <li>Producent - Intel</li>
+                        <p></p>
+                        <li>Seria procesora - i5</li>
+                        <p></p>
+                        <li>Generacja / model - 12/400 </li>
+                        <p></p>
+                        <li>Oznaczenie procesora w tym przsypadku F <br/>(Brak zintegrowanej grafiki)</li>
+                    </ul>
+                </div>
+                <div class="pion">
+                    <h2 class="heading">Jak odczytać dane <br/>z pamięci RAM</h2>
+                </div>
+                <div class="pion">
+                    <h3 class="heading" id="intel">Corsair Vengeance RGB DDR5 6000MHz CL36 2x16GB</h3>
+                </div>
+                <div class="pion">
+                    <ul class="list-style none">
+                        <li>Producent - Corsair</li>
+                        <p></p>
+                        <li>Model - Vengeance</li>
+                        <p></p>
+                        <li>Posiada RGB</li>
+                        <p></p>
+                        <li>Rodzaj pamięci - DDR5</li>
+                        <p></p>
+                        <li>Częstotliwość taktowania - 6000MHz</li>
+                        <p></p>
+                        <li>Opóżnienia - CL36</li>
+                        <p></p>
+                        <li>Pojemność - 2 razy po 16GB</li>
+                    </ul>
+                </div>
+                <div class="pion">
+                    <h2 class="heading">Coś do czego nie ma polecenia xD</h2>
+                    <div class="title">
+                        <ol class="list-style">
+                            <li>Podgląd zdarzeń</li>
+                            <li>Monitor niezawodności</li>
+                            <li>Monitor wydajności</li>
+                            <li>Menedżer zadań</li>
+                            <li>Informacje o systemie</li>
+                        </ol>
+                    </div>
                 </div>
             </section>
         </main>
